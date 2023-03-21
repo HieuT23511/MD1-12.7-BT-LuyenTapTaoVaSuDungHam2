@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+</head>
+<body>
+<script>
+  function calculateFactorial(number){
+    if (number === 0 || number === 1){
+      factorial = 1
+    } else {
+      factorial = number * calculateFactorial(number-1);
+    }
+    return factorial;
+  }
+  let inputNumber = +prompt('Enter the Interger Number>0: ');
+  calculateFactorial(inputNumber);
+  document.write(`Factorial of ${inputNumber} is ${calculateFactorial(inputNumber)}`);
+</script>
+</body>
+</html>
