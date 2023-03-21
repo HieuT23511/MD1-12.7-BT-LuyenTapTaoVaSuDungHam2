@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6</title>
+</head>
+<body>
+<script>
+  function checkInterger(number){
+    if (Number.isInteger(number) && number>0){
+      return true;
+    }
+    return false
+  }
+  let inputNumber = +prompt('Enter Number: ');
+  checkInterger(inputNumber);
+  document.write(`${inputNumber} is Interger: ${checkInterger(inputNumber)}`)
+
+</script>
+</body>
+</html>
