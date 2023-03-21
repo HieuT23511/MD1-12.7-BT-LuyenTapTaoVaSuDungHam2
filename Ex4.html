@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+</head>
+<body>
+<script>
+    function checkTypeofNumber(x) {
+        if (!isNaN(x)) {
+            return true;
+        }
+        return false
+    }
+    let inputNumber = prompt('Enter Character: ');
+    checkTypeofNumber(inputNumber);
+    document.write(`Ki tu ${inputNumber} la ki tu so: ${checkTypeofNumber(inputNumber)}`);
+</script>
+</body>
+</html>
