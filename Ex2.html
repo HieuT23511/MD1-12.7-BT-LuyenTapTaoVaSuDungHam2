@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1</title>
+</head>
+<body>
+<script>
+    function calculateCircle(number){
+        let areaCircle = Math.PI * number * number;
+        let perimeterCircle = 2 * Math.PI * number;
+        document.write(`The area of Circle (Radius = R) is ${areaCircle}.<br>`);
+        document.write(`The Perimeter of Circle (Radius = R) is ${perimeterCircle}.`);
+    }
+    let radius = prompt('Enter Radius of Circle: ')
+    calculateCircle(radius);
+</script>
+</body>
+</html>
