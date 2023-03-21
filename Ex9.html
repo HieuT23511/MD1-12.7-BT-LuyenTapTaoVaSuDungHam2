@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8</title>
+</head>
+<body>
+<script>
+    let arr = [];
+
+    function creatNewArr() {
+        let arrLength = prompt('Enter Length of Array:');
+        for (let i = 0; i < arrLength; i++) {
+            let arrElements = prompt(`${arrLength - i} Elements left.`)
+            arr.push(arrElements);
+        }
+    }
+
+    creatNewArr();
+    let inputNumber = prompt('Enter Number:');
+    if (arr.indexOf(inputNumber)) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (inputNumber === arr[i]) {
+                count++;
+            }
+        }
+        document.write(`${inputNumber} is in Array, appear ${count} times.`)
+    } else {
+        alert(`${inputNumber} is not in array.`)
+    }
+
+</script>
+</body>
+</html>
